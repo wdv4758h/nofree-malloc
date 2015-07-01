@@ -27,3 +27,7 @@ void* malloc (size_t size) {
     printf("my malloc :P\n");
     return sbrk(size);
 }
+
+void free(void *addr) {
+    printf("we won't free the memory :P\n");
+}
